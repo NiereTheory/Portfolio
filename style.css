@@ -1,0 +1,110 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+}
+
+body {
+    margin: 1em 0;
+    padding: 0px;
+}
+
+.blue {
+    color: lightskyblue;
+}
+
+/*  */
+
+nav {
+    margin: 1em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 2em;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* border: 1px solid blue; */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+}
+
+nav ul li a h1 {
+    margin: 0;
+}
+
+/*  */
+
+.hero {
+    min-height: 50vh;
+    background: url('./images/numbers.jpeg') no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .herocontent {
+    border: 10px solid white;
+    background-color: grey;
+    opacity: .85;
+    padding: 2em;
+    width: 50%;
+}
+
+.herocontent :not(span) {
+    color: white;
+}
+
+.herocontent ul {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.herocontent ul li {
+    list-style-type: none;
+}
+
+/*  */
+
+#skills h1, #experience h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#skills .skills .subskill h2 {
+    text-align: center;
+}
+
+#skills .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 2em;
+}
+
+#skills .skills .subskill {
+    flex-basis: 30%;
+}
+
+#skills .skills .subskill ul {
+    list-style-type: none;
+    padding: 0;
+}
