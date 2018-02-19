@@ -29,17 +29,17 @@ nav ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 1em 2em;
+    margin: .5em 2em;
     padding: 0;
 }
 
 nav ul li {
     list-style-type: none;
-    /* border: 1px solid blue; */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+	color: #484D6D;
 }
 
 nav ul li a {
