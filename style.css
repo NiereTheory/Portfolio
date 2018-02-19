@@ -18,7 +18,7 @@ body {
 
 hr {
     border-top: 1px solid #EE6352;
-    width: 5vw;
+    width: 50vw;
     margin: 5vh auto;
 }
 
@@ -34,7 +34,7 @@ nav ul {
     justify-content: flex-start;
     align-items: center;
     margin: 0 2em;
-    padding: 0px;
+    padding: 0;
 }
 
 nav ul li {
@@ -112,6 +112,7 @@ nav ul li a h1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+	flex-direction: row;
     margin: 0 2em;
 }
 
@@ -130,3 +131,15 @@ nav ul li a h1 {
 }
 
 /* */
+
+@media screen and (max-width: 800px) {
+	nav ul {
+		flex-direction: column;
+	}
+	nav ul li a {
+		padding: 1vh;
+	}
+	#skills .skills {
+		flex-direction: column;
+	}
+}
