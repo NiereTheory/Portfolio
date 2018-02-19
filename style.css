@@ -12,10 +12,6 @@ body {
     color: #484D6D;
 }
 
-.emphasize {
-    text-decoration: underline #EE6352;
-}
-
 hr {
     border-top: 1px solid #EE6352;
     width: 50vw;
@@ -72,9 +68,10 @@ nav ul li a h1 {
 .hero .herocontent {
     border: 10px solid white;
     background-color: grey;
-    opacity: .85;
+    /* opacity: .85; */
     padding: 2em;
     width: 50%;
+	animation: opac 3.5s forwards, spin 2s;
 }
 
 .herocontent :not(span) {
@@ -93,6 +90,10 @@ nav ul li a h1 {
 .herocontent ul li {
     list-style-type: none;
     padding: 0 1em;
+}
+
+.herocontent h1 {
+	margin-top: 0;
 }
 
 /*  */
@@ -128,6 +129,12 @@ nav ul li a h1 {
 .subskillcontent * {
     font-family: 'Lato', sans-serif;
     font-size: 110%;
+	animation: fadein 4s;
+}
+
+.subskillcontent p * {
+	font-size: inherit;
+	font-family: inherit;
 }
 
 /* */
@@ -142,4 +149,20 @@ nav ul li a h1 {
 	#skills .skills {
 		flex-direction: column;
 	}
+}
+
+@keyframes opac {
+	from { opacity: 0 }
+	to { opacity: .85 }
+}
+
+@keyframes fadein {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+
+@keyframes spin {
+	0%   { transform: rotate(-120deg);  }
+	/* 25%  { transform: rotate(-15deg);  } */
+	100% { transform: rotate(0deg);   }
 }
