@@ -4,18 +4,28 @@
 }
 
 body {
-    margin: 1em 0;
+    margin: 0;
     padding: 0px;
 }
 
-.blue {
-    color: lightskyblue;
+.accent {
+    color: #484D6D;
+}
+
+.emphasize {
+    text-decoration: underline #EE6352;
+}
+
+hr {
+    border-top: 1px solid #EE6352;
+    width: 5vw;
+    margin: 5vh auto;
 }
 
 /*  */
 
 nav {
-    margin: 1em;
+    margin: 1vh;
 }
 
 nav ul {
@@ -90,11 +100,12 @@ nav ul li a h1 {
 #skills h1, #experience h1 {
     text-align: center;
     margin-bottom: 0;
-    color: #fab387;
+    color: #28A745;
 }
 
 #skills .skills .subskill h2 {
     text-align: center;
+    color: #484D6D;
 }
 
 #skills .skills {
@@ -112,3 +123,10 @@ nav ul li a h1 {
     list-style-type: none;
     padding: 0;
 }
+
+.subskillcontent * {
+    font-family: 'Lato', sans-serif;
+    font-size: 110%;
+}
+
+/* */
