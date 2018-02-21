@@ -59,7 +59,7 @@ body {
     background: linear-gradient(to right, rgba(0,0,0, .8), rgba(0, 246, 255, .8)), url('./images/numbers.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
 
     display: flex;
     align-items: center;
@@ -94,8 +94,8 @@ body {
 
 .section {
     background-color: #f7f7f7;
-    margin-top: -10vh;
-    padding: 10vh 0 5vh 0;
+    margin-top: -15vh;
+    padding: 15vh 0 5vh 0;
     min-height: 60vh;
 }
 
@@ -139,7 +139,7 @@ body {
     background: linear-gradient(to right, rgba(0,0,0, .8), rgba(0, 246, 255, .8)), url('./images/dashboard.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 45vh);
 
     display: flex;
     align-items: center;
