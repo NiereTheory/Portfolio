@@ -16,60 +16,46 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">
-                    <h1>
-                        Niere<span class="accent"> Theory </span>
-					</h1>
-                </a>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__ul--li">
+                <a class="nav__ul--lia" href="#"><span class="accentg">Niere</span> Theory</a>
             </li>
-            <li>
-                <a href="#hero">Welcome</a>
+            <li class="nav__ul--li">
+                <a class="nav__ul--lia" href="#hero">Welcome</a>
             </li>
-            <li>
-                <a href="#skills">Skills</a>
+            <li class="nav__ul--li">
+                <a class="nav__ul--lia" href="#sectionskills">Skills</a>
             </li>
-            <li>
-                <a href="#experience">Experience</a>
+            <li class="nav__ul--li">
+                <a class="nav__ul--lia" href="#sectionexperience">Experience</a>
             </li>
         </ul>
     </nav>
 
-    <div id="#hero">
-        <div class="hero">
-            <div class="herocontent">
-                <h1>
-                    Niere<span class="accent"> Theory</span> </h1>
-                <h3>Learn about me</h3>
-                <ul>
-                    <li>
-                        <a href="https://github.com/NiereTheory" target="_blank"><span class="accent fab fa-github"></span><br>Github</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/benjamin-niere-79225843/" target="_blank"><span class="accent fab fa-linkedin"></span><br>LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content--header"><span class="accentg">Niere</span>Theory</h1>
+            <h3 class="hero__content--subheader">Visit my Github</h3>
+            <a href="https://github.com/NiereTheory" class="fab fa-github hero__content--link fa-2x"></a>
         </div>
-    </div>
+    </header>
 
-    <div id="skills">
-        <h1 class="sectionHeader">Skills</h1>
-        <div class="skills">
-            <div class="subskill">
-                <h2 class="sectionSubHeader">Data Analytics</h2>
-                <div class="subskillcontent">
+    <div class="section" id="sectionskills">
+        <h1 class="section__mainheader">Skills</h1>
+        <div class="section__flex">
+            <div class="section__flexbox">
+                <h2 class="section__flexbox--header">Data Analytics</h2>
+                <div class="section__flexbox--content">
                     <p class="sectioncontent">Derive analytical insights for business decisions using a variety of data sources.
 					<br><br>
 					I generally accomplish this by identifying relevant parties and systems in scope, build an ETL process to load the <b>Oracle</b> data warehouse using <b>SSIS</b>, and then leverage <b>SQL</b> and/or <b>Python</b> to both predict and answer questions from the business.</p>
                 </div>
 
             </div>
-            <div class="subskill">
-                <h2 class="sectionSubHeader">Full Stack Development</h2>
-                <div class="subskillcontent">
+            <div class="section__flexbox">
+                <h2 class="section__flexbox--header">Full Stack Development</h2>
+                <div class="section__flexbox--content">
                     <p class="sectioncontent">Build data-driven web dashboards for business to retrieve metrics as self-service.
 					<br><br>
 					I build and maintain an internal site that provides transparency to data for users at all levels. I leverage frameworks such as <b>Knockout</b> and <b>Bootstrap</b> during the development process.
@@ -77,9 +63,9 @@
                 </div>
 
             </div>
-            <div class="subskill">
-                <h2 class="sectionSubHeader">Personal Projects</h2>
-                <div class="subskillcontent">
+            <div class="section__flexbox">
+                <h2 class="section__flexbox--header">Personal Projects</h2>
+                <div class="section__flexbox--content">
                     <p class="sectioncontent">I spend free time learning trending technologies to keep my knowledge up-to-date.
 					<br><br>
 					My current focus has been on open-source technologies such as <b>Docker</b>, <b>Angular</b>, <b>Vue</b>, <b>Node</b>, <b>Express</b>, and <b>Postgres</b>. Bonus: I'm really enjoying CSS3's <b>Flexbox</b>
@@ -90,43 +76,37 @@
         </div>
     </div>
 
-    <hr>
+    <header class="hero2">
+        <div class="hero__content">
+            <h1 class="hero__content--header"><span class="accentg">Niere</span>Theory</h1>
+            <h3 class="hero__content--subheader">Visit my LinkedIn</h3>
+            <a href="" class="fab fa-linkedin hero__content--link fa-2x"></a>
+        </div>
+    </header>
 
-    <div id="experience">
-        <h1 class="sectionHeader">Experience</h1>
-		<div class="experience">
-			<div class="experiencebox" id="thirdjob">
-                <h2 class="sectionSubHeader">Sales Reporting and Goal Setting<small><br>Oct 2017 - present</small></h2>
-				<img class="citi" src="./images/citi.png" alt="Citi">
+    <div class="section" id="sectionexperience">
+        <h1 class="section__mainheader">Experience</h1>
+		<div class="section__flex">
+			<div class="section__flexbox" id="thirdjob">
+                <h2 class="section__flexbox--header">Sales Reporting and Goal Setting</h2>
+                <h3 class="section__flexbox--header">Citi &raquo; Oct 2017 &mdash; present</h3>
 				<p class="sectioncontent">Perform reporting and analysis on Retail Bank complaints. Build data pipelines, web dashboards, and ad-hoc analytics for senior leadership to view and act upon.</p>
             </div>
-			<div class="experiencebox" id="secondjob">
-                <h2 class="sectionSubHeader">Software Asset Management<small><br>May 2015 - Oct 2017</small></h2>
-				<img class="citi" src="./images/citi.png" alt="Citi">
+			<div class="section__flexbox" id="secondjob">
+                <h2 class="section__flexbox--header">Software Asset Management</h2>
+                <h3 class="section__flexbox--header">Citi &raquo; May 2015 &mdash; Oct 2017</h3>
 				<p class="sectioncontent">Ensured Citi's software estate was properly (and optimally) licensed via aggregating disparate data sources into accurately consolidated views. Acted as a key member of various software deals and cloud strategy development.</p>
             </div>
-            <div class="experiencebox" id="firstjob">
-                <h2 class="sectionSubHeader">Global Voice Operations<small><br>Aug 2014 - May 2015</small></h2>
-				<img class="citi" src="./images/citi.png" alt="Citi">
+            <div class="section__flexbox" id="firstjob">
+                <h2 class="section__flexbox--header">Global Voice Operations</h2>
+                <h3 class="section__flexbox--header">Citi &raquo; Aug 2014 &mdash; May 2015</h3>
 				<p class="sectioncontent">Application Manager for North America Avaya voice products responsible for inventory management, process improvement, and internal audit response.</p>
             </div>
         </div>
     </div>
 
-	<hr>
-
-	<div id="contact">
-		<ul>
-			<li>
-				<a href="https://github.com/NiereTheory" target="_blank"><span class="accent fab fa-github"></span><br>Github</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/benjamin-niere-79225843/" target="_blank"><span class="accent fab fa-linkedin"></span><br>LinkedIn</a>
-			</li>
-			<li>
-				<a href="#"><span class="accent fas fa-level-up-alt"></span><br>Return to top</a>
-			</li>
-		</ul>
+	<div class="footer">
+        <a class="footer__content--link" href="#">Return to top <span class="fas fa-level-up-alt"></span></a>
 	</div>
 
 </body>
