@@ -116,21 +116,25 @@ body {
     letter-spacing: 1rem;
     font-size: 4rem;
     padding: 2rem 0;
-	text-shadow: .2rem .2rem 1rem rgba(128 ,128 , 128, .8)
+	text-shadow: .2rem .2rem 1rem rgba(128 ,128 , 128, .8);
 }
 
 .section__flex {
     margin: 2.5rem 5rem;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-around;
 	flex-direction: row;
 }
 
 .section__flexbox {
+	padding: 2rem 2rem;
+	margin: 2rem;
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     flex-basis: 30%;
+	box-shadow: 0 .3rem 2rem rgba(128 ,128 , 128, .5), 0 -.3rem 2rem rgba(128 ,128 , 128, .5);
+	background-color: white;
 }
 
 .section__flexbox--header {
@@ -175,12 +179,12 @@ body {
     color: black;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
     .nav__ul, .section__flex, .nav__ul__flexbox--right {
         flex-direction: column;
     }
     .nav__ul--li, .section__flexbox {
-        padding: 1rem 0;
+        padding: 1rem 1rem;
     }
 	html {
 		font-size: 55%;
