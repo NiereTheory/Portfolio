@@ -32,7 +32,7 @@ body {
 .nav__ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     list-style-type: none;
@@ -41,6 +41,12 @@ body {
 .nav__ul--li {
     font-size: 2rem;
     /* border-bottom: .1rem solid transparent; */
+}
+
+.nav__ul__flexbox--right {
+	display: flex;
+	text-align: center;
+	flex-direction: row;
 }
 
 .nav__ul--lia {
@@ -169,7 +175,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .nav__ul, .section__flex {
+    .nav__ul, .section__flex, .nav__ul__flexbox--right {
         flex-direction: column;
     }
     .nav__ul--li, .section__flexbox {
