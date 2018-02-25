@@ -1,5 +1,15 @@
-/* #00f6ff
-#28A745 */
+:root {
+	--color-blue-primary: #00f6ff;
+	--color-green-primary: #28A745;
+	--color-purple-primary: #484D6D;
+	--color-white-primary: #fff;
+	--color-grey-primary: #808080;
+	--color-grey-secondary: #f7f7f7;
+
+	--shade-black-primary: rgba(0, 0, 0, .8);
+	--shade-blue-primary: rgba(0, 246, 255, .8);
+	--shade-grey-primary: rgba(128 ,128 , 128, .5);
+}
 
 * {
     margin: 0;
@@ -13,17 +23,11 @@ html {
 
 body {
     box-sizing: border-box;
-    color: grey;
+    color: var(--color-grey-primary);
     font-family: 'Raleway', 'Lato', sans-serif;
 }
 
-.accentg {
-    color: #28A745;
-}
-
-.accentb {
-    color: blue;
-}
+/* NAV */
 
 .nav {
     margin: 2.5rem 5rem;
@@ -38,35 +42,35 @@ body {
     list-style-type: none;
 }
 
+.banner {
+	margin-right: auto;
+}
+
 .nav__ul--li {
     font-size: 2rem;
     /* border-bottom: .1rem solid transparent; */
 }
 
-.nav__ul__flexbox--right {
-	display: flex;
-	text-align: center;
-	flex-direction: row;
-}
-
 .nav__ul--lia {
 	text-decoration: none;
-	color: grey;
+	color: var(--color-grey-primary);
 	padding: 1rem 2rem;
 	transition: all .5s;
 	text-transform: uppercase;
-	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #28A745 50%);
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-green-primary) 50%);
 	background-size: 220%;
 }
 
 .nav__ul--lia:hover {
     background-position: 100%;
-	color: white;
+	color: var(--color-white-primary);
 }
+
+/* HERO */
 
 .hero {
     height: 60vh;
-    background: linear-gradient(to right, rgba(0,0,0, .8), rgba(0, 246, 255, .8)), url('./images/numbers.jpeg') no-repeat center center fixed;
+    background: linear-gradient(to right, var(--shade-black-primary), var(--shade-blue-primary)), url('./images/numbers.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
@@ -78,9 +82,8 @@ body {
 }
 
 .hero__content {
-    /* line-height: 2rem; */
     font-size: 2.5rem;
-    color: white;
+    color: var(--color-white-primary);
 }
 
 .hero__content--header {
@@ -92,18 +95,17 @@ body {
 .hero__content--link {
     padding-top: 1rem;
     text-decoration: none;
-    color: white;
+    color: var(--color-white-primary);
 }
 
 .hero__content--link:hover {
     transform: translateY(-.1rem);
-    box-shadow: 0 .2rem rgba(0,0,0,.3);
 }
 
-/*  */
+/*  SECTION */
 
 .section {
-    background-color: #f7f7f7;
+    background-color: var(--color-grey-secondary);
     margin-top: -10vh;
     padding: 10vh 0 5vh 0;
     min-height: 60vh;
@@ -111,12 +113,12 @@ body {
 
 .section__mainheader {
     text-align: center;
-    color: #28A745;
+    color: var(--color-green-primary);
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-size: 4rem;
     padding: 2rem 0;
-	text-shadow: .2rem .2rem 1rem rgba(128 ,128 , 128, .5);
+	text-shadow: .2rem .2rem 1rem var(--shade-grey-primary);
 }
 
 .section__flex {
@@ -133,12 +135,12 @@ body {
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     flex-basis: 30%;
-	box-shadow: 0 2rem 5rem rgba(128 ,128 , 128, .1), 0 -.3rem 2rem rgba(128 ,128 , 128, .1);
-	background-color: white;
+	box-shadow: 0 2rem 7rem var(--shade-grey-primary);
+	background-color: var(--color-white-primary);
 }
 
 .section__flexbox--header {
-    color: #484D6D;
+    color: var(--color-purple-primary);
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -149,9 +151,11 @@ body {
     margin: auto;
 }
 
+/* HERO2  */
+
 .hero2 {
     height: 60vh;
-    background: linear-gradient(to right, rgba(0,0,0, .8), rgba(0, 246, 255, .8)), url('./images/dashboard.jpg') no-repeat center center fixed;
+    background: linear-gradient(to left, var(--shade-black-primary), var(--shade-blue-primary)), url('./images/dashboard.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50vh);
@@ -162,7 +166,7 @@ body {
     text-align: center;
 }
 
-/* */
+/* FOOTER */
 
 .footer {
     margin: 2rem;
@@ -172,14 +176,16 @@ body {
     padding: 2rem;
     display: inline-block;
     font-size: 2rem;
-    text-decoration: underline;
+    text-decoration: none;
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    color: grey;
+    color: var(--color-grey-primary);
 }
 
-@media screen and (max-width: 920px) {
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 950px) {
 	html {
 		font-size: 55%;
 	}
@@ -189,6 +195,9 @@ body {
     .nav__ul--li {
         padding: .8rem 0;
     }
+	.banner {
+		margin: 0;
+	}
 	.section__flex {
 		margin: 1rem;
 	}
