@@ -21,15 +21,15 @@
         <ul class="nav__ul">
 			<!-- <div class="nav__ul__flexbox"> -->
 				<li class="nav__ul--li banner">
-	                <a class="nav__ul--lia" href="#"><b>Ben Niere</b></a>
+	                <a data-scroll class="nav__ul--lia" href="#"><b>Ben Niere</b></a>
 	            </li>
 			<!-- </div> -->
 			<!-- <div class="nav__ul__flexbox--right"> -->
 				<li class="nav__ul--li">
-	                <a class="nav__ul--lia" href="#sectionskills" id="skillsnav">Skills</a>
+	                <a data-scroll class="nav__ul--lia" href="#sectionskills" id="skillsnav">Skills</a>
 	            </li>
 				<li class="nav__ul--li">
-	                <a class="nav__ul--lia" href="#sectionexperience">Experience</a>
+	                <a data-scroll class="nav__ul--lia" href="#sectionexperience">Experience</a>
 	            </li>
 			<!-- </div> -->
 
@@ -108,8 +108,13 @@
     </div>
 
 	<div class="footer">
-        <a class="footer__content--link" href="#">Return to top <span class="fas fa-level-up-alt"></span></a>
+        <a data-scroll class="footer__content--link" href="#">Return to top <span class="fas fa-level-up-alt"></span></a>
 	</div>
+
+	<script src="./assets/smooth-scroll.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
 
 </body>
 
