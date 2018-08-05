@@ -1,5 +1,3 @@
 # Portfolio
 
-ToDo:
-add transition to underline
-media query stack columns where needed
+See my capabilities and experience <a href="https://nieretheory.github.io/Portfolio/">here</a>.
