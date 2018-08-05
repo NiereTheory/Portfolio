@@ -12,27 +12,24 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 
 <body>
     <nav class="nav" id="nav">
         <ul class="nav__ul">
-			<!-- <div class="nav__ul__flexbox"> -->
-				<li class="nav__ul--li banner">
-	                <a data-scroll class="nav__ul--lia" href="#"><b>Ben Niere</b></a>
-	            </li>
-			<!-- </div> -->
-			<!-- <div class="nav__ul__flexbox--right"> -->
-				<li class="nav__ul--li">
-	                <a data-scroll class="nav__ul--lia" href="#sectionskills" id="skillsnav">Skills</a>
-	            </li>
-				<li class="nav__ul--li">
-	                <a data-scroll class="nav__ul--lia" href="#sectionexperience">Experience</a>
-	            </li>
-			<!-- </div> -->
-
+            <li onclick="scroller('#banner')" class="nav__ul--li banner">
+                <a class="nav__ul--lia" id="banner" href="#">
+                    <b>Ben Niere</b>
+                </a>
+            </li>
+            <li onclick="scroller('#sectionskills')" class="nav__ul--li">
+                <a class="nav__ul--lia" id="skillsnav">Skills</a>
+            </li>
+            <li class="nav__ul--li" onclick="scroller('#sectionexperience')">
+                <a class="nav__ul--lia">Experience</a>
+            </li>
         </ul>
     </nav>
 
@@ -50,28 +47,32 @@
             <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Data Analytics</h2>
                 <div class="section__flexbox--content">
-                    <p class="sectioncontent">Derive analytical insights for business decisions using a variety of data sources.
-					<br><br>
-					I generally accomplish this by identifying relevant parties and systems in scope, build an ETL process to load the <b>Oracle</b> data warehouse using <b>SSIS</b>, and then leverage <b>SQL</b> and/or <b>Python</b> to both predict and answer questions relevant to the business.</p>
+                    <p class="sectioncontent">Derive analytical insights for business decisions using a variety of disparate data sources.
+                        <br>
+                        <br>I generally accomplish this by identifying relevant parties and systems in scope and building an
+                        ETL process with the proper tools. Form here I can deeply understand the data to predict and answer
+                        business questions.
                 </div>
             </div>
             <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Full Stack Development</h2>
                 <div class="section__flexbox--content">
-                    <p class="sectioncontent">Build data-driven web dashboards for stakeholders to retrieve metrics as self-service.
-					<br><br>
-					I build and maintain an internal site that provides transparency to data for users at all levels. I leverage frameworks such as <b>Knockout</b> and <b>Bootstrap</b> during the development process.
-					</p>
+                    <p class="sectioncontent">Build data-driven web dashboards for stakeholders to drive automation and self-service.
+                        <br>
+                        <br>I build and maintain an internal site that provides transparency to data for users at all levels.
+                        I will leverage frameworks to speed up development times and ensure consistency across pages.
+                    </p>
                 </div>
 
             </div>
             <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Personal Projects</h2>
                 <div class="section__flexbox--content">
-                    <p class="sectioncontent">I spend free time learning about trending technologies to keep my knowledge up-to-date.
-					<br><br>
-					My current focus has been on open-source technologies such as <b>Docker</b>, <b>Angular</b>, <b>Vue</b>, <b>Node</b>, <b>Express</b>, and <b>Postgres</b>. Currently enjoying <b>Grid</b> and <b>Flexbox</b>.
-					</p>
+                    <p class="sectioncontent">I spend free time learning about interesting/trending technologies. Open-source projects has made this
+                        space easier to navigate
+                        <br>
+                        <br>I am currently focused on Docker, Angular, Node, Hadoop, and CSS3 Flexbox / Grid.
+                    </p>
                 </div>
 
             </div>
@@ -88,33 +89,36 @@
 
     <div class="section" id="sectionexperience">
         <h1 class="section__mainheader">Experience</h1>
-		<div class="section__flex">
-			<div class="section__flexbox">
+        <div class="section__flex">
+            <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Sales Reporting and Goal Setting</h2>
                 <h3 class="section__flexbox--header">Citi &raquo; Oct 2017 &mdash; present</h3>
-				<p class="sectioncontent">Perform reporting and analysis on Retail Bank complaints. Build data pipelines, web dashboards, and ad-hoc analytics for senior leadership to view and act upon.</p>
+                <p class="sectioncontent">Perform reporting and analysis on the Retail Bank. Build data pipelines, data warehouse solutions, web dashboards,
+                    and ad-hoc analytics for senior leadership to view and act upon.</p>
             </div>
-			<div class="section__flexbox">
+            <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Software Asset Management</h2>
                 <h3 class="section__flexbox--header">Citi &raquo; May 2015 &mdash; Oct 2017</h3>
-				<p class="sectioncontent">Ensured Citi's software estate was properly (and optimally) licensed via aggregating disparate data sources into accurately consolidated views. Acted as a key member of various software deals and cloud strategy development.</p>
+                <p class="sectioncontent">Ensured Citi's software estate was properly and optimally licensed. Leveraged various data points to create
+                    Acted as a key member of various software deals and cloud strategy development.
+                </p>
             </div>
             <div class="section__flexbox">
                 <h2 class="section__flexbox--header">Global Voice Operations</h2>
                 <h3 class="section__flexbox--header">Citi &raquo; Aug 2014 &mdash; May 2015</h3>
-				<p class="sectioncontent">Application Manager for North America Avaya voice products responsible for inventory management, process improvement, and internal audit response.</p>
+                <p class="sectioncontent">Application Manager for North America Avaya voice products responsible for inventory management, process
+                    improvement, and internal audit response.</p>
             </div>
         </div>
     </div>
 
-	<div class="footer">
-        <a data-scroll class="footer__content--link" href="#">Return to top <span class="fas fa-level-up-alt"></span></a>
-	</div>
+    <div class="footer">
+        <a class="footer__content--link" onclick="scroller('nav')">Return to top
+            <span class="fas fa-level-up-alt"></span>
+        </a>
+    </div>
 
-	<script src="./assets/smooth-scroll.min.js"></script>
-	<script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-	</script>
+    <script src="./main.js"></script>
 
 </body>
 
